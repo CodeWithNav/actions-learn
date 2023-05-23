@@ -30,7 +30,7 @@ jobs:
       - name: Zip build files
         run: zip -r build.zip dist/
 
-      - name: Create release 
+      - name: Create release
         id: create_release
         uses: actions/create-release@v1
         env:
