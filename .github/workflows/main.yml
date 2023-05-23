@@ -17,11 +17,14 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14
-
+          
+      - name: Set Up Angular
+        run: npm i -g angular/cli
+        
       - name: Install dependencies
         run: npm i
 
-      - name: Build Angular app
+      - name: Build Angular Project
         run: ng build --configuration=production
 
       - name: Zip build files
