@@ -19,7 +19,7 @@ jobs:
           node-version: 14
           
       - name: Set Up Angular
-        run: npm i -g angular/cli
+        run: npm i -g @angular/cli
         
       - name: Install dependencies
         run: npm i
