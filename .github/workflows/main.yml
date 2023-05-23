@@ -36,8 +36,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.REL_SEC }}
         with:
-          tag_name: release-1.0.${{ github.run_number }}
-          release_name: Release 1.0.${{ github.run_number }}
+          tag_name: release-1.0.${{ github.run_number }}@v
+          release_name: Release 1.0.${{ github.run_number }}@v
           draft: false
           prerelease: false
 
