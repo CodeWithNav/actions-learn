@@ -1,0 +1,18 @@
+<div>
+
+  <div class="flex flex-row fixed w-full justify-center items-center">
+      <input [(ngModel)]="query" placeholder="Search..." class="p-4 m-2 rounded-xl w-[300px]">
+    <div class="flex flex-col justify-center items-center rounded-full bg-white w-12 h-12 border-2 border-blue-500 bg-blue-200" (click)="searchImage()">
+      <mat-icon matPrefix class="self-center text-blue-700">search</mat-icon>
+    </div>
+  </div>
+
+    <div class="flex flex-wrap w-full">
+      <div class="m-4 rounded "  *ngFor="let imageUrl of imagesUrl;let index = index">
+        <img [src]="imageUrl" class="h-[300px] w-[300px] rounded-3xl shadow-2xl shadow-gray-400 filter ">
+      </div>
+    </div>
+</div>
+
+
+
